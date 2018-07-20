@@ -1,7 +1,7 @@
 import {extname, basename, dirname} from 'path';
 
 const BUILTIN_COMPONENT_REGEX = /^[a-z]+$/;
-const DATA_ATTRIBUTE = 'data-component';
+const DATA_ATTRIBUTE = 'data-role';
 
 export default function babelPluginReactComponentDataAttribute({types: t}) {
   function createAttribute(name) {
